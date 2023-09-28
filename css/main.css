@@ -1,1 +1,13 @@
 /* Place CSS styles here */
+/* change the responsive layout title and the discription
+ */
+ 
+ .form-email{
+  border: 1px;
+  color: #000000;
+  border-style: hidden;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  
+ }
