@@ -65,9 +65,9 @@
  .header-list{
   width: fit-content;
   display: flex;
-  
  }
 
+ /* main */
  .form-email{
   border: 1px;
   color: #000000;
@@ -76,12 +76,43 @@
   justify-content: center;
   font-size: 30px;
  }
-
+ 
  .body{
    min-height: 100vh;
-
  }
 
+ .hair-care{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+ }
+ 
+ .feature-items{
+ display: flex;
+ justify-content: space-between;
+ }
+
+ .product-bundle{
+   width: 30px;
+   height: 40px;
+ }
+ .product-brushes{
+   width: 30px;
+   height: 40px;
+ }
+ .product-accesories{
+   width: 30px;
+   height: 40px;
+ }
+ .product-colors{
+   width: 30px;
+   height: 40px;
+ }
+
+
+
+
+
+ /* footer */
  .footer{
   padding-bottom: 1px;
   background-color: #091a09;
