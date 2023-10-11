@@ -8,7 +8,7 @@
 
  .header-logo{
   width: 100%;
-  height: 120px;
+  height: 90px;
   background-color: #ffc0cb;
   box-sizing: border-box;
   position: sticky;
@@ -16,30 +16,28 @@
   justify-content: space-around;
  }
 
- h1{
+ .Logo-title{
    font-family: lucida handwriting;
     font-size: 50px;
-    padding-top: 20px;
+    
    
 }
  .dropdown{
   width: 60px;
   height: 70px;
-  padding-top: 30px;
+  padding-top: 20px;
  }
 
   .logo{
-    
    width: 90px;
-   height: 100px;
-   padding-top: 20px;
+   height: 90px;
  }
 
  .header-list ul{
    display: flex;
    list-style: none;
    font-size: 25px;
-   padding-top: 45px;
+   padding-top: 24px;
  }
 
  .header-list ul li{
@@ -58,8 +56,8 @@
  }
 
  .cart{
-   height: 70px;
-   padding-top: 60px;
+   height: 50px;
+   padding-top: 45px;
  }
 
  .header-list{
@@ -67,50 +65,170 @@
   display: flex;
  }
 
- /* main */
- .form-email{
-  border: 1px;
-  color: #000000;
-  border-style: hidden;
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
- }
- 
- .body{
-   min-height: 100vh;
+ /* MainPage main */
+  .Main-page{
+   background-image: url(../img/hairTextures.jpg);
+   background-size: 100%;
+   background-repeat: no-repeat;
+   height: 500px;
+   width: fit-content;
+ } 
+
+ .hair-care-text{
+  font-family: serif;
+  margin: 0;
+  padding: 0;
  }
 
- .hair-care{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
+.paragraph{
+   font-family: 'Times New Roman', Times, serif;
+   color: #f6f4f5;
+   font-size: 20px;
+   text-align: center;
+}
+
+ .feature-f{
+   font-family: serif;
+   font-size: 30px;
+   font-style: italic;
  }
  
  .feature-items{
  display: flex;
  justify-content: space-between;
+ width: 100%;
  }
 
- .product-bundle{
-   width: 30px;
-   height: 40px;
- }
- .product-brushes{
-   width: 30px;
-   height: 40px;
- }
- .product-accesories{
-   width: 30px;
-   height: 40px;
- }
- .product-colors{
-   width: 30px;
-   height: 40px;
+ .product-bundle-img{
+   width: 200px; 
+   height: 200px;
+   padding: 10px;
  }
 
+ .product-bundle:hover{
+  background-color: #0f352a;
+  transition: 0.5s;
+ }
+ .product-bundle:hover{
+   color: #f3e6e8;
+   transition: 0.5s;
+ }
+
+ .product-brushes-img{
+   width: 200px;
+   height: 200px;
+   padding: 10px;
+ }
+
+ .product-brushes:hover{
+   background-color: #0f352a;
+   transition: 0.5s;
+  }
+
+  .product-brushes:hover{
+    color: #f3e6e8;
+    transition: 0.5s;
+  }
+
+ .product-accesories-img{
+   width: 200px;
+   height: 200px;
+   padding: 10px;
+ }
+
+ .product-accesories:hover{
+   background-color: #0f352a;
+   transition: 0.5s;
+  }
+
+  .product-accesories:hover{
+    color: #f3e6e8;
+    transition: 0.5s;
+  }
+
+ .product-colors-img{
+   width: 200px;
+   height: 200px;
+   padding: 10px;
+ }
+
+ .product-colors:hover{
+   background-color: #0f352a;
+   transition: 0.5s;
+  }
+
+  .product-colors:hover{
+    color: #f3e6e8;
+    transition: 0.5s;
+  }
+
+ h4{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+ }
+
+ .hair-care{
+   font-family: 'Times New Roman', Times, serif;
+ }
+ 
+
+/* login main */
 
 
+.signup-login{
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: serif;
+   text-align: center;
+   color: #201302;
+   background: url(../img/R.jpg);
+   background-size: cover;
+}
 
+.signup-login form{
+   border-radius: 40px;
+   background-color: #5f9ea0;
+   width: 100%;
+   width: 400px;
+}
+
+.Inputs{
+   width: 90%;
+   margin: 20px;
+   background: #f7fcf7;
+}
+.Inputs input{
+   background-color: #b45fb0;
+   height: 100%;
+   width: 100%;
+}
+
+.Inputs input::placeholder {
+  color: #f7fcf7;
+}
+
+.forgot a{
+   text-decoration: none;
+}
+
+.forgot a:hover{
+   text-decoration: underline;
+   color: #8a2be2;
+}
+
+.login-button{
+   width: 80%;
+   border: none;
+   background: #e2f4e2;
+   border-radius: 60px;
+   cursor: pointer;
+}
+
+.Register{
+   width: 100%;
+}
 
  /* footer */
  .footer{
