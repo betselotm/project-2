@@ -18,6 +18,7 @@
  }
  /* how to stop my inpusts form intefering wth eachother.
  logo position wont stay static. feature items need to come up on the phone.
+ nav bar backgrund color is behind pic.
   */
  .Logo-title{
   font-family: lucida handwriting;
@@ -394,13 +395,15 @@
    .paragraph{
    font-size: 15px;
    }
-   .signup-login{
-    
+   .about-us ul{
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
    }
    }
   
   /* media query for tablet */
- @media (min-width: 481px) and (max-width: 767px) {
+ @media (min-width: 481px) and (max-width: 785px) {
     body { 
     background-color: #b9f2b9;
     }
