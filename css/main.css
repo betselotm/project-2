@@ -11,12 +11,14 @@
   height: 90px;
   background-color: #ffc0cb;
   box-sizing: border-box;
-  position: static;
+  position: sticky;
   display: flex;
   justify-content: right;
   padding-left: 25px;
  }
-
+ /* how to stop my inpusts form intefering wth eachother.
+ logo position wont stay static. feature items need to come up on the phone.
+  */
  .Logo-title{
   font-family: lucida handwriting;
   font-size: 50px;
@@ -30,11 +32,11 @@
   position: absolute;
   box-sizing: border-box;
   /* z-index: 1;
-  transition: o.5s all;
-  transform: translateX(0); */
+  transition: o.5s all; */
+  transform: translateX(-250px); 
  }
 
-.hamburger .menu{
+ .hamburger .menu{
   color: #512f10;
   background: #b8b87a;
   font-size: 35px;
@@ -62,13 +64,36 @@
  .hamburger ul li a:hover{
   background: #512f10;
   color: #99d9e4;
+  letter-spacing: 5px;
  }
 
- .dropdown{
-  width: 60px;
-  height: 70px;
-  padding-top: 20px;
+ input{
+  display: none;
+  visibility: hidden;
+ }
 
+ span{
+  position: absolute;
+  right: -40px;
+  top: 30px;
+  font-size: 35px;
+  color: #bdb76b;
+  border-radius: 3px;
+  padding: 4px;
+  background: #100801;
+  cursor: pointer;
+ }
+
+ #bars{
+  background: #9acd32;
+ }
+
+ #check:checked~ .hamburger{
+  transform: translateX(0px);
+ }
+
+ #check:checked~ .hamburger #bars{
+  display: none;
  }
 
  .not-hamburger{
@@ -122,8 +147,8 @@
   use text shadow for log0
    */
   background-repeat: no-repeat;
-  height: 500px;
-  width: fit-content;
+  min-height: 100vh;
+  max-width: 100%;
   position: static;
  } 
 
@@ -137,8 +162,8 @@
   font-family: 'Times New Roman', Times, serif;
   color: #f6f4f5;
   font-size: 20px;
-  text-align: center;
-}
+  text-align: center; 
+ }
 
  .feature-f{
   font-family: serif;
@@ -148,13 +173,27 @@
  
  .feature-items{
   display: flex;
-  justify-content: space-between;
   width: 100%;
  }
 
+ .product-accesories{
+  padding: 1px;
+ }
+
+ .product-brushes{
+  padding: 1px;
+ }
+
+ .product-colors{
+  padding: 1px;
+ }
+
+ .product-bundle{
+  padding: 1px;
+ } 
+
  .product-bundle-img{
   width: 100%; 
-  padding: 10px;
  }
 
  .product-bundle:hover{
@@ -168,50 +207,47 @@
 
  .product-brushes-img{
   width: 100%;
-  padding: 10px;
  }
 
  .product-brushes:hover{
   background-color: #0f352a;
   transition: 0.5s;
-  }
+ }
 
   .product-brushes:hover{
   color: #f3e6e8;
   transition: 0.5s;
-  }
+ }
 
  .product-accesories-img{
   width: 100%;
-  padding: 10px;
  }
 
  .product-accesories:hover{
   background-color: #0f352a;
   transition: 0.5s;
-  }
+ }
 
   .product-accesories:hover{
   color: #f3e6e8;
   transition: 0.5s;
-  }
+ }
 
  .product-colors-img{
   width: 100%;
-  padding: 10px;
  }
 
  .product-colors:hover{
   background-color: #0f352a;
   transition: 0.5s;
-  }
+ }
 
-  .product-colors:hover{
-   color: #f3e6e8;
+ .product-colors:hover{
+  color: #f3e6e8;
   transition: 0.5s;
-  }
+ }
 
- h4{
+  h4{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
  }
@@ -220,9 +256,10 @@
   font-family: 'Times New Roman', Times, serif;
  }
  
-/* login main */
+ /* login main */
  .signup-login{
   min-height: 100vh;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -342,14 +379,26 @@
  @media (max-width: 480px) {
    body { 
     background-color: #b9f2b9;
-    .header-logo{
-   max-width: 100%;
-     }
-     .Main-page{
-      background-image: 100%;
-     }
+    }
+   .header-logo{
+    min-width: 100%;
    }
-  }
+   .Main-page{
+   background-image: 100%;
+   }
+   .feature-items {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+   }
+   .paragraph{
+   font-size: 15px;
+   }
+   .signup-login{
+    
+   }
+   }
+  
   /* media query for tablet */
  @media (min-width: 481px) and (max-width: 767px) {
     body { 
@@ -362,4 +411,5 @@
     body { 
     background-color: #b9f2b9;
     }
+    
    }

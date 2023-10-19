@@ -15,7 +15,8 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css
+  ">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -27,24 +28,16 @@
   <!-- if you have a header, use class on the header not make another div class
    use width 100% and then use max-width to still have flexebility.
   big background use vh-->
- <header> 
-  <div class="header-logo"> 
-    
-   <div class="not-hamburger">
-    <img src="./img/afro logo.png" alt="" class="logo">
-     <h1 class="Logo-title">Mulugeta</h1>
-     <nav class="header-list">
-       <ul>
-         <li> <a href="./MainPage.html">Home</a></li>
-         <li> <a href="./Login.html">Sign In/ up </a></li>
-       </ul>
-    </nav>
-    <img src="./img/cart.png" alt="" class="cart">
-   </div>
-   
-   <div class="hamburger">
-    <img src="./img/dropdown.png" alt=""  class="dropdown">
-    <div class="menu">Shop Hair</div>
+ <header class="header-logo"> 
+  <input type="checkbox" name="" id="check"> 
+  <div class="hamburger">
+    <label for="check">
+      <span class="fas fa-times" id="close"></span>
+      <span class="fas fa-bars" id="open"></span>
+    </label>
+    <div class="menu">
+      Shop Hair
+    </div>
      <ul>
        <li><a href="#">Bundles</a></li>
        <li><a href="#">Brushes</a></li>
@@ -52,40 +45,51 @@
        <li><a href="#">Colors</a></li>
        <li><a href="#">treatment</a></li>
      </ul>
-   </div>
+  </div>
+
+  <div class="not-hamburger">
+    <img src="./img/afro logo.png" alt="" class="logo">
+     <h1 class="Logo-title">Mulugeta</h1>
+     <nav class="header-list">
+       <ul>
+         <li> <a href="./MainPage.html">Home</a></li>
+         <li> <a href="./Login.html">Sign In/ up </a></li>
+       </ul>
+     </nav>
+    <img src="./img/cart.png" alt="" class="cart">
   </div>
  </header>
 
  <!-- dont forget to change the title -->
  <main class="Main-page">
     <div class="hair-care-img">
-      <h1 class="hair-care-text">Hair Care</h1>
-       <p class="paragraph">At our brand, we understand that hair comes in all textures and lengths, and we believe that every unique hair type deserves the perfect care. Whether your locks are smooth and straight, richly coiled, or somewhere in between, our range of specialized products is designed to cater to the diverse needs of your hair.</p> 
-       
+     <h1 class="hair-care-text">Hair Care</h1>
+     <p class="paragraph">At our brand, we understand that hair comes in all textures and lengths, and we believe that every unique hair type deserves the perfect care. Whether your locks are smooth and straight, richly coiled, or somewhere in between, our range of specialized products is designed to cater to the diverse needs of your hair.</p>  
     </div>
   </main> 
-    <section> 
+
+  <section> 
     <h2 class="feature-f">Featured Items</h2>
      <div class="feature-items">
       <div class="product-bundle">
         <!-- get imgages with aspect rtio of 1:1 -->
-        <img class="product-bundle-img" src="./img/Dark-Lovely-Reviving-Color-395-Natural-Black.jpg" alt="">
+        <img class="product-bundle-img" src="./img/productbundle.jpg" alt="">
         <h4 >Bundles</h4>
       </div>
-        <div class="product-brushes">
-          <img class="product-brushes-img" src="./img/Dark-Lovely-Reviving-Color-395-Natural-Black.jpg" alt="">
-          <h4 >Brushes</h4>
-        </div>
-        <div class="product-accesories">
-          <img class="product-accesories-img" src="./img/Dark-Lovely-Reviving-Color-395-Natural-Black.jpg" alt="">
-          <h4 >Accesories</h4>
-        </div>
-        <div class="product-colors">
-          <img class="product-colors-img" src="./img/Dark-Lovely-Reviving-Color-395-Natural-Black.jpg" alt="">
-          <h4 >Hair Color</h4>
+      <div class="product-brushes">
+       <img class="product-brushes-img" src="./img/productbrush.jpg" alt="">
+       <h4 >Brushes</h4>
+      </div>
+      <div class="product-accesories">
+        <img class="product-accesories-img" src="./img/productaccessories.jpg" alt="">
+        <h4 >Accesories</h4>
+      </div>
+      <div class="product-colors">
+        <img class="product-colors-img" src="./img/productcolor.jpg" alt="">
+        <h4 >Hair Color</h4>
         </div>
      </div>
-   </section>
+  </section>
  
 
  <br>
@@ -104,16 +108,16 @@
        <img src="./img/twitter.png" alt="">
        <img src="./img/tik_tok_black_logo_icon_147071.webp" alt="">
       </div>
-       <div class="about-us">
+      <div class="about-us">
         <ul>
           <li><a href="">News</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Contact Us</a></li>
         </ul>
-       </div>
-       <div class="copyright">
+      </div>
+      <div class="copyright">
         <p>CopyRight &copy;2022;</p>
-       </div>
+      </div>
     </div>
   </footer>
 
