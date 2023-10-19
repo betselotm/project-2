@@ -20,9 +20,9 @@
  .Logo-title{
   font-family: lucida handwriting;
   font-size: 50px;
-}
+ }
 
-.hamburger{ 
+ .hamburger{ 
   height: 100%;
   width: 250px;
   background: #e3cc72;
@@ -32,7 +32,7 @@
   /* z-index: 1;
   transition: o.5s all;
   transform: translateX(0); */
-}
+ }
 
 .hamburger .menu{
   color: #512f10;
@@ -41,28 +41,28 @@
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   padding: 20px;
-}
+ }
 
-.hamburger ul li{
+ .hamburger ul li{
   width: 100%;
   list-style: none;
   padding: 20px;
   display: block;
-}
+ }
 
-.hamburger ul li a{
+ .hamburger ul li a{
   text-decoration: none;
   color: #201302;
   font-size: 25px;
   transition: 0.3s;
   position: relative;
   padding-left: 30px;
-}
+ }
 
-.hamburger ul li a:hover{
+ .hamburger ul li a:hover{
   background: #512f10;
   color: #99d9e4;
-}
+ }
 
  .dropdown{
   width: 60px;
@@ -75,6 +75,7 @@
   display: flex;
   justify-content: space-between;
  }
+
   .logo{
   width: 90px;
   height: 90px;
@@ -116,6 +117,10 @@
   .Main-page{
   background-image: url(../img/hairTextures.jpg);
   background-size: 100%;
+  /* min height use vh
+  background siz-cover
+  use text shadow for log0
+   */
   background-repeat: no-repeat;
   height: 500px;
   width: fit-content;
@@ -128,7 +133,7 @@
   padding: 0;
  }
 
-.paragraph{
+ .paragraph{
   font-family: 'Times New Roman', Times, serif;
   color: #f6f4f5;
   font-size: 20px;
@@ -148,8 +153,7 @@
  }
 
  .product-bundle-img{
-  width: 200px; 
-  height: 200px;
+  width: 100%; 
   padding: 10px;
  }
 
@@ -163,8 +167,7 @@
  }
 
  .product-brushes-img{
-  width: 200px;
-  height: 200px;
+  width: 100%;
   padding: 10px;
  }
 
@@ -179,8 +182,7 @@
   }
 
  .product-accesories-img{
-  width: 200px;
-  height: 200px;
+  width: 100%;
   padding: 10px;
  }
 
@@ -195,8 +197,7 @@
   }
 
  .product-colors-img{
-  width: 200px;
-  height: 200px;
+  width: 100%;
   padding: 10px;
  }
 
@@ -340,22 +341,25 @@
   /* media query for phone */
  @media (max-width: 480px) {
    body { 
-     background-color: #b9f2b9;
-     .header-logo{
-      width: fit-content;
+    background-color: #b9f2b9;
+    .header-logo{
+   max-width: 100%;
+     }
+     .Main-page{
+      background-image: 100%;
      }
    }
   }
   /* media query for tablet */
  @media (min-width: 481px) and (max-width: 767px) {
     body { 
-     background-color: #b9f2b9;
+    background-color: #b9f2b9;
     }
    }
 
    /* media query for desktop */
  @media (min-width: 786px) {
     body { 
-     background-color: #b9f2b9;
+    background-color: #b9f2b9;
     }
    }
