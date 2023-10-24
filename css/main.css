@@ -1,6 +1,4 @@
 /* Place CSS styles here */
-/* change the responsive layout title and the discription
- */
  .header{
   margin: 0;
   padding: 0;
@@ -143,10 +141,6 @@
   .Main-page{
   background-image: url(../img/hairTextures.jpg);
   background-size: 100%;
-  /* min height use vh
-  background siz-cover
-  use text shadow for log0
-   */
   background-repeat: no-repeat;
   min-height: 100vh;
   max-width: 100%;
